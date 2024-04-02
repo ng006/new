@@ -1,0 +1,43 @@
+.nav-pills {
+    margin-bottom: 20px; /* Add margin bottom to create space between buttons and chat container */
+}
+
+.chat-container {
+    margin-top: 10px;
+    width: 70%;
+}
+
+.chat-messages {
+    width: 100%;
+}
+
+.message {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    max-width: 50%; /* Adjust the maximum width of the message container */
+}
+
+.left {
+    background-color: #e1f5fe; /* Light blue for left-aligned messages */
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.right {
+    background-color: #f8bbd0; /* Light pink for right-aligned messages */
+    margin-left: 28rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.chat-input input {
+    flex: 1;
+    margin-right: 10px;
+}

@@ -1,1 +1,26 @@
-<p>header works!</p>
+<div class="d-flex flex-column align-items-center">
+    <div class="nav-pills justify-content-center" style="margin-top: 20px">
+        <button class="btn btn-outline-primary" (click)="toggleUpload()" style="margin-right: 20px;">File Upload</button>
+        <button class="btn btn-outline-primary" (click)="toggleChat()">Q&A</button>
+    </div>
+    
+    <div class="chat-container" *ngIf="showChat" style="margin-top: 40px">
+        <div class="chat-messages">
+            <div class="message-container">
+                <div class="message left">Hello! How can I assist you today?</div>
+                <div class="message right">This is a sample message from the chatbot.</div>
+                <div class="message left">Feel free to type your queries here.</div>
+                <div class="message right">Type "help" for assistance.</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message..." class="form-control" />
+            <button class="btn btn-primary">Send</button>
+        </div>
+    </div>
+    
+    <div class="upload-container" *ngIf="showUpload" style="margin-top: 40px">
+        <label class="form-label" for="customFile">Default file input example</label>
+        <input type="file" class="form-control" id="customFile" />
+    </div>
+</div>
